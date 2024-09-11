@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="salary"
+        options={{
+          title: 'Salary',
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="file-invoice-dollar" color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
