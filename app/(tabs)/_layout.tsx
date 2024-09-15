@@ -32,15 +32,25 @@ export default function TabLayout() {
           ),
         }}
       />
-      <Tabs.Screen
-        name="salary"
-        options={{
-          title: 'Salary',
-          tabBarIcon: ({ color }) => (
-            <TabBarIcon name="file-invoice-dollar" color={color} />
-          ),
-        }}
-      />
+   <Tabs.Screen
+  name="salary_index"  
+  options={{
+    title: 'Hjem',
+    tabBarIcon: ({ color }) => (
+      <TabBarIcon name="file-invoice-dollar" color={color} />
+    ),
+  }}
+/>
+<Tabs.Screen
+  name="mineOplysninger"
+  options={{
+    title: 'Mine oplysninger',
+    tabBarIcon: ({ color }) => (
+      <TabBarIcon name="menu" size={24} color={color} />
+    ),
+  }}
+/>
+
     </Tabs>
   );
 }
